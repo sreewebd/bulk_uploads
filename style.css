@@ -1,0 +1,44 @@
+.m-t-16 {
+    margin-top: 16px;
+}
+
+.m-t-30 {
+    margin-top: 20px;
+}
+
+.data-wrapper {
+    position: relative;
+}
+
+.data-wrapper .input-container {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.dataContainer {
+    position: relative;
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+.showContainer {
+    border: 1px solid yellow;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.dataContainer.clicked::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0; 
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;    
+    border-bottom: 15px solid rgb(155, 147, 147);
+    transform: translate(-50%, 0);
+    z-index: 9999;
+}
